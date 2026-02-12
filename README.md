@@ -1,3 +1,12 @@
 # Basys3-FPGA-Based-UART-Python-Serial-Communication-Framework-for-PC-Synced-RTC-Live-Clock-Stopwatch
 The system provides a user-friendly interface through physical push buttons on the FPGA board, allowing the user to select between three operational modes: Live Time, Live Date, and Live Stopwatch. Time and date are synchronized once from the PC, then maintained on FPGA, while the stopwatch runs fully in hardware.When the user presses a button to request Live Time or Live Date, the FPGA detects the button input and forwards a control signal to the Verilog control logic. The Verilog system decodes the button number and activates the corresponding functional module among the three available modules. Based on this selection, the FPGA initiates UART communication with the Python application running on the PC.The Python program receives the request, retrieves the current system time or date from the PC, and transmits this information back to the FPGA via serial communication. The FPGA then forwards the received data to the Verilog logic, where it is parsed, processed, and displayed on the on-board seven-segment display. After the initial synchronization, the Verilog logic internally maintains and increments the time or date values, enabling continuous real-time display without requiring further updates from the PC. This design minimizes communication overhead and demonstrates efficient partitioning of responsibilities between software and hardware.In contrast, the Stopwatch mode is implemented entirely within Verilog and operates independently of the PC. All timing, counting, and control logic are handled on the FPGA, showcasing a fully hardware-based real-time system.
 
+Buttton Usage:
+Button  Label  Function
+BTNC    Center  Request time from PC → Show HH:MM
+BTNU     Up     Request date from PC → Show DD:MM
+BTNL    Left    Hold to show stopwatch
+BTNR    Right   Reset stopwatch to 00:00
+BTND    Down    Start/Stop stopwatch
+
+SPECIAL ATTENTION:The constraint file is written according to my available fpga and it's                         configuartion.It may not work for other FPGA devices of different                              configuaration.
