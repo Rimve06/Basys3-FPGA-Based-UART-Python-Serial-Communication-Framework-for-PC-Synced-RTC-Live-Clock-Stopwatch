@@ -9,4 +9,4 @@ BTNL    Left    Hold to show stopwatch
 BTNR    Right   Reset stopwatch to 00:00
 BTND    Down    Start/Stop stopwatch
 
-SPECIAL ATTENTION:The constraint file is written according to my available fpga and it's                         configuartion.It may not work for other FPGA devices of different                              configuaration.
+SPECIAL ATTENTION:The constraint file is written according to my available fpga and it's configuartion.It may not work for other FPGA devices of different                              configuaration.
