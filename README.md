@@ -295,6 +295,9 @@ If you are using another FPGA board, you must modify the constraint file accordi
 # Author
 
 **Tasmin Rubaiyat Rimve**
+
 CSE Undergraduate
+
 Khulna University of Engineering & Technology (KUET)
+
 If you find this project useful, feel free to ⭐ the repository.
