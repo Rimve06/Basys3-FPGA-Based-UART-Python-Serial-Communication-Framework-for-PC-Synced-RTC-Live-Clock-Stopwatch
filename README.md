@@ -270,7 +270,7 @@ Example:
 
 # Constraint File
 
-The provided **map.xdc** file is specifically written for the author's **Basys 3 FPGA board configuration**.
+The provided **constraints.xdc** file is specifically written for the author's **Basys 3 FPGA board configuration**.
 
 Pin mappings, clock assignments, and peripheral connections may differ on other FPGA boards.
 
@@ -290,10 +290,7 @@ If you are using another FPGA board, you must modify the constraint file accordi
 - LCD/OLED support
 
 ---
-# ATTENTION
-The constraint file is written according to my available FPGA board and it's configuration may not work for other FPGA devices of different configurations.
 
----
 
 # Author
 
